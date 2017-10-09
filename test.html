@@ -1,0 +1,38 @@
+<!-- _____       __      _                      _____                     _     
+|_   _|     / _|    | |                    /  ___|                   | |    
+  | | _ __ | |_ ___ | |__   __ _ ___  ___  \ `--.  ___  __ _ _ __ ___| |__  
+  | || '_ \|  _/ _ \| '_ \ / _` / __|/ _ \  `--. \/ _ \/ _` | '__/ __| '_ \ 
+ _| || | | | || (_) | |_) | (_| \__ \  __/ /\__/ /  __/ (_| | | | (__| | | |
+ \___/_| |_|_| \___/|_.__/ \__,_|___/\___| \____/ \___|\__,_|_|  \___|_| |_| -->
+                                                                            
+                                                                            
+<font color="white">
+    <input type="radio" name="R1" value="contact" onClick="field1.value='Contact Name';field2.value='Contact Organisation'">
+    <span
+        onClick="R1[0].checked=true;field1.value='Contact Name';field2.value='Contact Organisation'" style="cursor:hand">Contact Search |</span>
+        <input type="radio" name="R1" value="org" onClick="field1.value='Organisation Name';field2.value='Ironbark Client Code'">
+        <span
+            onClick="R1[1].checked=true;field1.value='Organisation Name';field2.value='Ironbark Client Code'" style="cursor:hand">Organisation Search |</span><br>
+            <input type="radio" name="R1" value="proj" onClick="field1.value='Project Number';field2.value='Project Name'" checked>
+            <span
+                onClick="R1[2].checked=true;field1.value='Project Number';field2.value='Project Name'" style="cursor:hand">Project Search |</span>
+                <a href="http://bwwiki/project-search/">Infobase Advanced Search</a> |<br>
+                <input type="text" id="field1" name="field1" style="color:#AAA9A9" class="form" value="Project Number" title="Enter Search String"
+                    onFocus="document.getElementById('field1').value='';">
+                <input type="text" id="field2" name="field2" style="color:#AAA9A9" class="form" value="Project Name" title="Enter Search String"
+                    onFocus="document.getElementById('field2').value='';">
+</font><br>
+<a href="javascript:void(0)" onClick="doSearch()" class="quicklnk" style="text-align:center">&nbsp;Go&nbsp;&nbsp;</a> 
+<!-- 
+_____       __     ______             _____                     _     
+|_   _|     / _|    |  _  \           /  ___|                   | |    
+  | | _ __ | |_ ___ | | | |___   ___  \ `--.  ___  __ _ _ __ ___| |__  
+  | || '_ \|  _/ _ \| | | / _ \ / __|  `--. \/ _ \/ _` | '__/ __| '_ \ 
+ _| || | | | || (_) | |/ / (_) | (__  /\__/ /  __/ (_| | | | (__| | | |
+ \___/_| |_|_| \___/|___/ \___/ \___| \____/ \___|\__,_|_|  \___|_| |_|
+                                                                       
+                                                 -->                       
+<font color="white">Quick InfoDoc Search<br>
+    <input type="text" name="field3" id="field3" style="color:#AAA9A9" class="formx" value="Project Id" title="Enter Project Id"
+        onClick="document.getElementById('field3').value='';"> </font>
+<a href="javascript:void(0)" onClick="goInfoDoc()" class="quicklnk9" style="text-align:center" title="Open InfoDoc in new Window">&nbsp;Go&nbsp;&nbsp;</a>
