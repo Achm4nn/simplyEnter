@@ -168,7 +168,7 @@ function goInfoDoc() {
    
 
 
-function goJobs() {
+function goProcess() {
   value1 = process.value
   if (process.value == '') {
     value1 = ""
@@ -177,9 +177,7 @@ function goJobs() {
   value1 = process.value
 }
 
-  //http://bwonline/infodoc/mainmenu.asp?ProjectNo=04113B
-  
-  //baseHref = '/infodoc/mainmenu.asp?ProjectNo='
+ 
   baseHref = 'http://bwonline/JobProcess/Default.aspx?id='
   extHref = ''
   if (value1 != '') {
