@@ -1,34 +1,31 @@
 
 
-/**
- * @param {Event} e 
- */
-function formHandler1(e) {
+function formHandler1(event) {
 
-  e.preventDefault();
+  event.preventDefault();
 
   goProcess1();
-
+  
 }
 
 function setup() {
 
-  var input = document.getElementById("process");
+  var input = document.getElementById("process1");
 
-  input.onclick = function (e) {
+  input.onclick = function () {
     input.value = '';
   };
 
-  var form = document.getElementById('ourform');
+  var form = document.getElementById('ourform1');
 
   form.onsubmit = formHandler1;
 
 }
 
 function goProcess1() {
-  var jobNumberInput = document.getElementById("process");
+  var jobNumberInput = document.getElementById("process1");
 
-  var baseHref = location.protocol + '//bwonline/JobProcess/Default.aspx?id=';
+  var baseHref = location.protocol + '//bwonline/JobProcess1/Default.aspx?id=';
 
   var extHref = jobNumberInput.value;
 
