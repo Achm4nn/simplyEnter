@@ -1,17 +1,43 @@
-<font color="white">
+<font color="black "> 
+
+    
+<!--     TODO: Make white again
+ -->
+ 
+ <form id="infobaseForm">
+
     <input type="radio" name="R1" value="contact" onClick="field1.value='Contact Name';field2.value='Contact Organisation'">
+
     <span onClick="R1[0].checked=true;field1.value='Contact Name';field2.value='Contact Organisation'" style="cursor:hand">Contact Search |</span>
+
     <input type="radio" name="R1" value="org" onClick="field1.value='Organisation Name';field2.value='Ironbark Client Code'">
+
+
     <span onClick="R1[1].checked=true;field1.value='Organisation Name';field2.value='Ironbark Client Code'" style="cursor:hand">Organisation Search |</span>
+
     <br>
+
     <input type="radio" name="R1" value="proj" onClick="field1.value='Project Number';field2.value='Project Name'" checked>
+
     <span onClick="R1[2].checked=true;field1.value='Project Number';field2.value='Project Name'" style="cursor:hand">Project Search |</span>
+
     <a href="http://bwwiki/project-search/">Infobase Advanced Search</a> |
+
     <br>
+
     <input type="text" id="field1" name="field1" style="color:#AAA9A9" class="form" value="Project Number" title="Enter Search String"
         onFocus="document.getElementById('field1').value='';">
+
     <input type="text" id="field2" name="field2" style="color:#AAA9A9" class="form" value="Project Name" title="Enter Search String"
         onFocus="document.getElementById('field2').value='';">
+        <button type="submit" id="infobaseSubmit">Go</button>
+
+
+    </form>
+
 </font>
+
 <br>
-<a href="javascript:void(0)" onClick="doSearch()" class="quicklnk" style="text-align:center">&nbsp;Go&nbsp;&nbsp;</a>
+
+
+<!-- <a href="javascript:void(0)" onClick="doSearch()" class="quicklnk" style="text-align:center">&nbsp;Go&nbsp;&nbsp;</a> -->
