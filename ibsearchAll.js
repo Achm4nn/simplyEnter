@@ -10,6 +10,8 @@ function formHandler1(event) {
     goProcess();
 }
 
+
+
 function jobProcess() {
     var input = document.getElementById("process");
     input.onclick = function () {
