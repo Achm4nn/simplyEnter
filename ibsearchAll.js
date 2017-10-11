@@ -4,7 +4,7 @@ cumbersome type the use mouse to hit "Go"
  */
 
 //Job Process Centre
-
+//Handles the forms native inbuilt functions
 function formHandler1(event) {
 
     event.preventDefault();
@@ -14,7 +14,7 @@ function formHandler1(event) {
 }
 
 
-
+//getting the value from the input
 function jobProcessing() {
 
     //console.log("hello");
@@ -30,10 +30,11 @@ function jobProcessing() {
 
     form.onsubmit = formHandler1
 }
+//processing the value and adding the url search. 
 function goProcess() {
     
     var jobNumberInput = document.getElementById('process');
-    
+    //used location.protocol so that if we change everything to https it will still work. 
     var baseHref = location.protocol + '//bwonline/JobProcess/Default.aspx?id=';
     
     var extHref = jobNumberInput.value;
@@ -51,4 +52,6 @@ function goProcess() {
         window.open(baseHref + extHref);
     }
 }
+
+//So it turns out I wasn't calling the function. 
 jobProcessing();
