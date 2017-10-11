@@ -9,7 +9,7 @@ function formHandler2(event) {
     }
     
     function infodocProcessing() {
-        var input = document.getElementById("infodoc");
+        var input = document.getElementById("infodocid");
     
         input.onclick = function () {
     
@@ -25,7 +25,7 @@ function formHandler2(event) {
     
     function goInfodoc() {
     
-        var jobNumberInput = document.getElementById('infodoc');
+        var jobNumberInput = document.getElementById('infodocid');
     
         var baseHref = location.protocol + '//bwonline/infodoc/start.aspx?ProjectId=';
     
