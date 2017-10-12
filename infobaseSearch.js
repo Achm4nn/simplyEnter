@@ -8,6 +8,9 @@ function formHandler(event) {
     doSearch();
 
 }
+var form = document.getElementById('infobaseForm');
+
+form.addEventListener('submit', formHandler);
 
 function doSearch() {
     //alert('test1')
@@ -135,38 +138,13 @@ function doSearch() {
         }
 
         if (extHref == '') {
-            alert('You can\'t search using a blank field, as it makes it extremely difficult\nfor InfoBase to find any results.\n\nPlease enter a search string and try again.')
+            alert('You can\'t search using a blank field, as it makes it extremely difficult\nfor InfoBase to find any results.\n\nPlease enter a search string and try again.');
+            console.log("Hahahahahahahahahahaha, you were mildly inconvenienced!")
         }
         else {
             window.open(baseHref + extHref + '&KeyWords=&prjorder=id&prjactive=yes&prjarchived=yes&DisplayPage=1&Zsearch=Start+Search')
         }
     }
 }
-
-function goInfoDoc() {
-    value1 = field3.value
-    if (field3.value == '') {
-        value1 = ""
-    }
-    else {
-        value1 = field3.value
-    }
-
-    //http://bwonline/infodoc/mainmenu.asp?ProjectNo=04113B
-
-    //baseHref = '/infodoc/mainmenu.asp?ProjectNo='
-    baseHref = 'http://bwonline/infodoc/start.aspx?ProjectId='
-    extHref = ''
-    if (value1 != '') {
-        extHref = value1
-    }
-
-
-    if (extHref == '') {
-        alert('You can\'t search using a blank field, as it makes it extremely difficult\nfor InfoDoc to find any results.\n\nPlease enter a full Project Id.')
-    }
-    else {
-        window.open(baseHref + extHref)
-    }
-
-}
+console.log("What do you want? Why are you even looking here! Stay out!");
+console.log("Want to know what I think, you should type \n doSearch();\n Go on, you know you want to :)")
